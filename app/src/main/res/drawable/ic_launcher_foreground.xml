@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App icon Moed — concept « croissant du molad → flamme », style tampon d'imprimeur.
+  Aplats pleins, vermillon `ner` (#B4471F) + bleu-nuit `twilight` (#1F3A5F) sur papier.
+  Tracé dans la zone de sécurité 72dp (viewport 108, marge ~18).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Croissant du molad (twilight) : disque plein moins disque décalé. -->
+    <path
+        android:fillColor="#1F3A5F"
+        android:fillType="evenOdd"
+        android:pathData="M54,70 m-26,0 a26,26 0 1,0 52,0 a26,26 0 1,0 -52,0 Z M62,70 m-21,0 a21,21 0 1,0 42,0 a21,21 0 1,0 -42,0 Z" />
+
+    <!-- Flamme `ner` (corps vermillon) émergeant du croissant. -->
+    <path
+        android:fillColor="#B4471F"
+        android:pathData="M54,20 C60,32 70,38 70,52 C70,63 63,71 54,71 C45,71 38,63 38,52 C38,38 48,32 54,20 Z" />
+
+    <!-- Cœur de flamme clair (papier) pour la lecture en tampon. -->
+    <path
+        android:fillColor="#F4ECDD"
+        android:pathData="M54,36 C57,43 61,46 61,53 C61,59 58,63 54,63 C50,63 47,59 47,53 C47,46 51,43 54,36 Z" />
+</vector>

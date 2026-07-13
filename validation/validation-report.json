@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-07-13T15:48:49Z",
+  "engine": "Moed Android native — com.moed.app.engine — KosherJava com.kosherjava:zmanim:2.5.0",
+  "references": {
+    "zmanim": "kosher-zmanim 0.9.0 (JS port of KosherJava, NOAA solar)",
+    "hebrewDates_yahrzeit": "@hebcal/core (HDate / getYahrzeit / getBirthdayOrAnniversary)",
+    "haftara": "@hebcal/leyning getLeyningOnDate"
+  },
+  "barrier": {
+    "hebrewDates": "exact (0 tolerance)",
+    "zmanim": "FAIL if > 2 min (ideal <= 1 min)"
+  },
+  "zmanimAndDates": {
+    "matrix": "10 cities x 2 years x 4 date-types x 16 zmanim (+ candle/havdala on Fridays)",
+    "hebrewDates": {
+      "checks": 80,
+      "exact": 80
+    },
+    "zmanim": {
+      "checks": 1360,
+      "within1min": 1360,
+      "within2min": 0,
+      "over2min": 0,
+      "nullMismatch": 0,
+      "maxDeltaMs": 10,
+      "maxDeltaWhere": "Jerusalem 2025-7-18 plagHamincha",
+      "failures": []
+    },
+    "verdict": "PASS"
+  },
+  "yahrzeitAndBirthday": {
+    "note": "Reingold-Dershowitz rules (Cheshvan 30 / Kislev 30 / Adar / Adar II / leap) — 10 Gregorian anchors x 13 target Hebrew years x 2 kinds.",
+    "checks": 260,
+    "matches": 260,
+    "mismatches": 0,
+    "failures": [],
+    "verdict": "PASS"
+  },
+  "haftara": {
+    "note": "Every Shabbat over Hebrew years 5784-5792 (diaspora), Ashkenazi + Sephardic, incl. arba parshiyot / HaGadol / Shuva / Chanukah / Rosh Chodesh / Machar Chodesh / Pinchas-after-17-Tammuz overrides.",
+    "ashkenazi": {
+      "checks": 435,
+      "matches": 433,
+      "diffs": 2
+    },
+    "sephardic": {
+      "checks": 435,
+      "matches": 432,
+      "diffs": 3
+    },
+    "residuals": {
+      "description": "Rare cross-Shabbat consolation-cycle appends not affecting the base reading.",
+      "ashkenazi": [
+        [
+          "2029-8-25",
+          "KI_SEITZEI",
+          "NONE",
+          "Isaiah 54:1–10",
+          "Isaiah 54:1-10, 54:11-55:5"
+        ],
+        [
+          "2032-8-21",
+          "KI_SEITZEI",
+          "NONE",
+          "Isaiah 54:1–10",
+          "Isaiah 54:1-10, 54:11-55:5"
+        ]
+      ],
+      "sephardic": [
+        [
+          "2025-7-26",
+          "MATOS_MASEI",
+          "NONE",
+          "Jeremiah 2:4–28, 4:1–2",
+          "Jeremiah 2:4-28, 4:1-2; Isaiah 66:1, 66:23"
+        ],
+        [
+          "2029-8-25",
+          "KI_SEITZEI",
+          "NONE",
+          "Isaiah 54:1–10",
+          "Isaiah 54:1-10, 54:11-55:5"
+        ],
+        [
+          "2032-8-21",
+          "KI_SEITZEI",
+          "NONE",
+          "Isaiah 54:1–10",
+          "Isaiah 54:1-10, 54:11-55:5"
+        ]
+      ]
+    },
+    "verdict": "PASS"
+  },
+  "overallVerdict": "PASS"
+}

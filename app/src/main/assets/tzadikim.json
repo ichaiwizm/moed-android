@@ -1,0 +1,112 @@
+[
+  {
+    "slug": "rashbi",
+    "names": {"fr": "Rabbi Chimon bar Yohaï", "en": "Rabbi Shimon bar Yochai", "he": "רבי שמעון בר יוחאי"},
+    "epithet": {"fr": "Le Rashbi", "en": "The Rashbi", "he": "רשב\"י"},
+    "category": "tanna",
+    "hilula": {"day": 18, "month": "Iyar"},
+    "hilulaNote": {"fr": "Lag BaOmer, à Méron.", "en": "Lag BaOmer, at Meron.", "he": "ל\"ג בעומר, במירון."},
+    "yearGregorian": 160,
+    "kever": {"place": "Meron", "country": "IL"},
+    "works": ["Zohar"],
+    "bio": {
+      "fr": "Tanna du IIe siècle, disciple de Rabbi Akiva, à qui la tradition attribue le Zohar. Sa hiloula à Méron le jour de Lag BaOmer rassemble des centaines de milliers de personnes.",
+      "en": "Second-century Tanna, disciple of Rabbi Akiva, to whom tradition attributes the Zohar. His hiloula at Meron on Lag BaOmer draws hundreds of thousands.",
+      "he": "תנא מהמאה השנייה, תלמידו של רבי עקיבא, שהמסורת מייחסת לו את הזוהר. הילולתו במירון בל\"ג בעומר."
+    },
+    "confidence": "traditional",
+    "sources": ["https://he.wikipedia.org/wiki/שמעון_בר_יוחאי"],
+    "motif": "motif-tanna"
+  },
+  {
+    "slug": "meir-baal-hanes",
+    "names": {"fr": "Rabbi Meïr Baal HaNes", "en": "Rabbi Meir Baal HaNes", "he": "רבי מאיר בעל הנס"},
+    "epithet": {"fr": "Le faiseur de miracles", "en": "Master of the miracle", "he": "בעל הנס"},
+    "category": "tanna",
+    "hilula": {"day": 14, "month": "Iyar"},
+    "yearGregorian": 175,
+    "kever": {"place": "Tiberias", "country": "IL"},
+    "works": [],
+    "bio": {
+      "fr": "Tanna de la troisième génération, l'un des principaux disciples de Rabbi Akiva. La tradition l'associe aux tsédaka et aux prières en cas de détresse.",
+      "en": "Third-generation Tanna, a leading disciple of Rabbi Akiva. Tradition associates him with charity and prayers in times of distress.",
+      "he": "תנא מהדור השלישי, מגדולי תלמידי רבי עקיבא."
+    },
+    "confidence": "traditional",
+    "sources": ["https://he.wikipedia.org/wiki/רבי_מאיר"],
+    "motif": "motif-tanna"
+  },
+  {
+    "slug": "baal-shem-tov",
+    "names": {"fr": "Rabbi Israël Baal Shem Tov", "en": "Rabbi Israel Baal Shem Tov", "he": "רבי ישראל בעל שם טוב"},
+    "epithet": {"fr": "Le Besht", "en": "The Besht", "he": "הבעש\"ט"},
+    "category": "hassid",
+    "hilula": {"day": 6, "month": "Sivan"},
+    "hilulaNote": {"fr": "Chavouot.", "en": "Shavuot.", "he": "שבועות."},
+    "yearGregorian": 1760,
+    "kever": {"place": "Medzhybizh", "country": "UA"},
+    "works": [],
+    "bio": {
+      "fr": "Fondateur du hassidisme au XVIIIe siècle. Son enseignement met l'accent sur la joie, la prière fervente et la présence divine en toute chose.",
+      "en": "Eighteenth-century founder of Hasidism. His teaching emphasises joy, fervent prayer, and the divine presence in all things.",
+      "he": "מייסד תנועת החסידות במאה ה-18."
+    },
+    "confidence": "high",
+    "sources": ["https://he.wikipedia.org/wiki/ישראל_בעל_שם_טוב"],
+    "motif": "motif-hassid"
+  },
+  {
+    "slug": "rambam",
+    "names": {"fr": "Rabbi Moché ben Maïmon", "en": "Rabbi Moshe ben Maimon", "he": "רבי משה בן מימון"},
+    "epithet": {"fr": "Le Rambam / Maïmonide", "en": "The Rambam / Maimonides", "he": "הרמב\"ם"},
+    "category": "rishon",
+    "hilula": {"day": 20, "month": "Teves"},
+    "yearGregorian": 1204,
+    "kever": {"place": "Tiberias", "country": "IL"},
+    "works": ["Mishné Torah", "Guide des égarés", "Commentaire de la Michna"],
+    "bio": {
+      "fr": "Rishon majeur (1138-1204), médecin, philosophe et codificateur. Son Mishné Torah demeure une référence halakhique centrale.",
+      "en": "Major Rishon (1138-1204), physician, philosopher and codifier. His Mishneh Torah remains a central halakhic reference.",
+      "he": "מגדולי הראשונים, רופא, פילוסוף ופוסק."
+    },
+    "confidence": "high",
+    "sources": ["https://he.wikipedia.org/wiki/רמב\"ם"],
+    "motif": "motif-rishon"
+  },
+  {
+    "slug": "ari-zal",
+    "names": {"fr": "Rabbi Its'hak Louria", "en": "Rabbi Isaac Luria", "he": "רבי יצחק לוריא"},
+    "epithet": {"fr": "Le Arizal", "en": "The Arizal", "he": "האר\"י ז\"ל"},
+    "category": "acharon",
+    "hilula": {"day": 5, "month": "Av"},
+    "yearGregorian": 1572,
+    "kever": {"place": "Tzfat", "country": "IL"},
+    "works": ["Etz Chaim"],
+    "bio": {
+      "fr": "Maître de la kabbale à Safed au XVIe siècle. Son école a profondément renouvelé la pensée mystique juive.",
+      "en": "Sixteenth-century master of Kabbalah in Safed. His school deeply renewed Jewish mystical thought.",
+      "he": "מגדולי המקובלים בצפת במאה ה-16."
+    },
+    "confidence": "high",
+    "sources": ["https://he.wikipedia.org/wiki/האר\"י"],
+    "motif": "motif-acharon"
+  },
+  {
+    "slug": "baba-sali",
+    "names": {"fr": "Rabbi Israël Abehatséra", "en": "Rabbi Israel Abuhatzeira", "he": "רבי ישראל אבוחצירא"},
+    "epithet": {"fr": "Baba Salé", "en": "Baba Sali", "he": "בבא סאלי"},
+    "category": "sefarade",
+    "hilula": {"day": 4, "month": "Shevat"},
+    "yearGregorian": 1984,
+    "kever": {"place": "Netivot", "country": "IL"},
+    "works": [],
+    "bio": {
+      "fr": "Grand maître sépharade du XXe siècle, originaire du Maroc. Sa hiloula à Netivot attire des dizaines de milliers de fidèles.",
+      "en": "Great twentieth-century Sephardic master, originally from Morocco. His hiloula in Netivot draws tens of thousands.",
+      "he": "מגדולי חכמי ספרד במאה ה-20, יליד מרוקו."
+    },
+    "confidence": "high",
+    "sources": ["https://he.wikipedia.org/wiki/ישראל_אבוחצירא"],
+    "motif": "motif-sefarade"
+  }
+]

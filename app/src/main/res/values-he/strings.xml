@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">מועד</string>
+
+    <string name="channel_shabbat_name">שבת</string>
+    <string name="channel_shabbat_desc">תזכורת להדלקת נרות לפני כניסת השבת.</string>
+    <string name="channel_yahrzeit_name">יארצייט</string>
+    <string name="channel_yahrzeit_desc">תזכורות ליארצייט וקדיש עבור יקיריכם.</string>
+    <string name="channel_omer_name">עומר</string>
+    <string name="channel_omer_desc">ספירת העומר היומית בתקופת הספירה.</string>
+    <string name="channel_holiday_name">חגים וצומות</string>
+    <string name="channel_holiday_desc">חגים, צומות וההילולא של היום.</string>
+
+    <string name="widget_candle_label">מועד — הדלקת נרות</string>
+    <string name="widget_zmanim_label">מועד — זמנים</string>
+    <string name="widget_omer_label">מועד — עומר</string>
+</resources>

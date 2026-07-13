@@ -1,0 +1,21 @@
+# --- Android / Gradle build outputs ---
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+build/
+/app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# --- Signing secrets (NE JAMAIS committer) ---
+*.jks
+*.keystore
+keystore.properties
+/app/upload.jks
+
+# --- Divers ---
+*.log
+/validation/work/

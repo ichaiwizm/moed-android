@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Per-app language preferences (Android 13+). Trois langues à parité, hébreu primaire (RTL). -->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="he" />
+    <locale android:name="fr" />
+    <locale android:name="en" />
+</locale-config>

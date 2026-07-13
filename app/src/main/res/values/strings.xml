@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Chaînes possédées par le module app-shell (nom d'app, canaux de notification, libellés de widgets).
+  Les chaînes d'écrans/UI sont fournies par les tables Compose (data/Localization.kt), cf. CONTRACTS §3.3.
+  Défaut de code = français (l'app mappe la langue système → he/fr/en au 1er lancement).
+-->
+<resources>
+    <string name="app_name">Moed</string>
+
+    <!-- Canaux de notification (créés par MoedApp au boot) -->
+    <string name="channel_shabbat_name">Chabbat</string>
+    <string name="channel_shabbat_desc">Rappel d\'allumage des bougies avant l\'entrée du Chabbat.</string>
+    <string name="channel_yahrzeit_name">Yahrzeit</string>
+    <string name="channel_yahrzeit_desc">Rappel des yahrzeits et du kaddish de vos proches.</string>
+    <string name="channel_omer_name">Omer</string>
+    <string name="channel_omer_desc">Compte quotidien du Omer pendant la période de Sefira.</string>
+    <string name="channel_holiday_name">Fêtes et jeûnes</string>
+    <string name="channel_holiday_desc">Fêtes, jeûnes et hiloula du jour.</string>
+
+    <!-- Widgets Glance -->
+    <string name="widget_candle_label">Moed — Allumage</string>
+    <string name="widget_zmanim_label">Moed — Zmanim</string>
+    <string name="widget_omer_label">Moed — Omer</string>
+</resources>

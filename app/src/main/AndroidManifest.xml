@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Notifications locales opt-in (demandées à l'opt-in, API 33+, jamais au lancement). -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Replanification des rappels après un redémarrage de l'appareil. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Alarmes exactes pour les échéances déterministes (allumage, yahrzeit, Omer). -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".MoedApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Moed">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Moed">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ============================ Widgets Glance (×3, offline) ============================ -->
+
+        <receiver
+            android:name=".widget.CandleWidgetReceiver"
+            android:exported="false"
+            android:label="@string/widget_candle_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/candle_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".widget.ZmanimWidgetReceiver"
+            android:exported="false"
+            android:label="@string/widget_zmanim_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/zmanim_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".widget.OmerWidgetReceiver"
+            android:exported="false"
+            android:label="@string/widget_omer_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/omer_widget_info" />
+        </receiver>
+
+        <!-- ============================ Notifications locales ============================ -->
+
+        <!-- Déclenché par AlarmManager pour poster chaque rappel planifié. -->
+        <receiver
+            android:name=".notif.NotificationReceiver"
+            android:exported="false" />
+
+        <!-- Replanifie la fenêtre glissante de rappels après un reboot. -->
+        <receiver
+            android:name=".notif.BootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Thème de fenêtre (Android View layer). Light par défaut, toujours (loi DA).
+  Le rendu Compose complet est piloté par MoedTheme ; ce thème ne sert qu'au fond de fenêtre
+  (anti-flash au démarrage) et aux barres système transparentes pour l'edge-to-edge.
+-->
+<resources>
+    <style name="Theme.Moed" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/paper</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

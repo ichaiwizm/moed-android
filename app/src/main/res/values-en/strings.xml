@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Moed</string>
+
+    <string name="channel_shabbat_name">Shabbat</string>
+    <string name="channel_shabbat_desc">Candle-lighting reminder before Shabbat begins.</string>
+    <string name="channel_yahrzeit_name">Yahrzeit</string>
+    <string name="channel_yahrzeit_desc">Yahrzeit and kaddish reminders for your loved ones.</string>
+    <string name="channel_omer_name">Omer</string>
+    <string name="channel_omer_desc">Daily Omer count during the Sefirah period.</string>
+    <string name="channel_holiday_name">Holidays &amp; fasts</string>
+    <string name="channel_holiday_desc">Holidays, fasts and the hiloula of the day.</string>
+
+    <string name="widget_candle_label">Moed — Candle Lighting</string>
+    <string name="widget_zmanim_label">Moed — Zmanim</string>
+    <string name="widget_omer_label">Moed — Omer</string>
+</resources>

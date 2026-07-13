@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tokens DA « Le Louah Imprimé » utilisés au niveau ressources (fenêtre, icône). -->
+<resources>
+    <color name="paper">#F4ECDD</color>
+    <color name="paper_raised">#FFFDF7</color>
+    <color name="ink">#171512</color>
+    <color name="ner">#B4471F</color>
+    <color name="twilight">#1F3A5F</color>
+
+    <!-- Négatif d'imprimerie (dark opt-in / système). -->
+    <color name="paper_dark">#191510</color>
+    <color name="ink_dark">#F0E6D2</color>
+</resources>
