@@ -26,7 +26,7 @@
 ## 1. Arborescence de fichiers proposée
 
 ```
-/root/apps/moed-android/
+/root/apps/moed/android/
 ├── NATIVE_SPEC.md                 (existe)
 ├── DESIGN.md                      (existe)
 ├── PLAN.md                        (ce fichier)

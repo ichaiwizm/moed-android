@@ -266,7 +266,7 @@ fun MoedTheme(dark: Boolean = isSystemInDarkTheme() /* défaut app = false */, c
 
 ## 10. Références
 
-- Spec produit natif : `/root/apps/moed-android/NATIVE_SPEC.md`
+- Spec produit natif : `/root/apps/moed/android/NATIVE_SPEC.md`
 - DA web/iOS (autre peau, à ne pas confondre) : `/root/apps/mvp-moed/design/DA.md`
 - Modèle de portage Android existant : `/root/apps/mvp-moed/android/app/src/main/java/com/moed/app/` (`ui/`, `widget/`, `notif/`, `data/`, `engine/`)
 - Material 3 Expressive : `MaterialShapes`, shape-morphing, `MotionScheme.expressive()` (androidx.compose.material3 ≥ 1.4).
