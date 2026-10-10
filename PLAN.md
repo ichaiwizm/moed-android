@@ -334,14 +334,14 @@ Plugins racine : `com.android.application 8.7.2`, `kotlin.android 2.0.21`, `kotl
 - **Signature** : keystore + secrets déjà générés dans `/root/.appstore/android-secrets.env`
   (`ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`) et `upload-keystore.jks`.
   `app/build.gradle.kts` doit lire un `keystore.properties` (storeFile/storePassword/keyAlias/keyPassword) pour le `signingConfigs { release }` et l'appliquer au `buildTypes.release`.
-- **Injection des secrets** : `bash /root/.appstore/setup-android-secrets.sh <owner/repo> /root/.appstore/play-service-account.json`
+- **Injection des secrets** : les clés vivent dans Ariane (annexe `stores`) depuis le 22/09/2026 — `signer moed` les ressort le temps d'un build, `ariane stores.upload` dépose le binaire.
   → pousse les 4 secrets de signature + le service account Play sur le repo GitHub.
 - **Workflow** : copier `/root/.appstore/android-template/.github/workflows/android-release.yml` → `.github/workflows/`, en remplaçant `__PACKAGE_NAME__` par `com.moed.app`.
   ⚠️ Le template est écrit pour **Capacitor** (`npx cap sync android`, `ANDROID_DIR: android`). Pour un projet **natif pur**, adapter :
   - supprimer `setup-node` + `npm ci` + `npx cap sync android` ;
   - régler `ANDROID_DIR: .` (le projet Gradle est à la racine) ;
   - conserver decode-keystore → `keystore.properties`, `./gradlew bundleRelease --no-daemon`, upload via `r0adkll/upload-google-play@v1` (chemin `app/build/outputs/bundle/release/app-release.aab`, `track` = input).
-- **Play Console** : service account `/root/.appstore/play-service-account.json` (upload store). Track par défaut `internal`.
+- **Play Console** : le compte de service vit dans les secrets d'Ariane ; le dépôt se fait par `ariane stores.upload`. Track par défaut `internal`.
 - **SDK local** (builds hors-CI) : `bash /root/.appstore/install-android-sdk.sh` (installe cmdline-tools + `platforms;android-34` + `build-tools;34.0.0` sous `/root/Android/sdk`) ou réutiliser `.android-sdk/` existant du projet de référence. Déclarer `sdk.dir` dans `local.properties` (gitignoré).
 - **Build local** : `./gradlew assembleDebug` (APK debug ~19 Mo attendu, cf. référence) ; `./gradlew bundleRelease` (AAB signé).
 - **Versionnage** : `versionCode`/`versionName` dans `defaultConfig` ; tag `v*` déclenche aussi le workflow (`on: push: tags: v*`).
